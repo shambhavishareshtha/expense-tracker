@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+
+        <!-- Monthly Summary Section -->
+        <div id="monthly-summary">
+            <h3>Summary for <span id="current-month">Month</span></h3>
+            <p>Total Spent: <span id="monthly-total-formatted">₹0.00</span></p>
+            <p>Items Added: <span id="item-count">0</span></p>
+        </div>
+
+        <!-- Expense Form -->
+        <form id="expense-form">
+            <p id="error-message"></p>
+
+            <div class="form-group">
+                <label for="expense-name">Expense Name:</label>
+                <input
+                    type="text"
+                    id="expense-name"
+                    placeholder="E.g. Groceries"
+                    autocomplete="off"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="expense-amount">Amount (₹):</label>
+                <input
+                    type="number"
+                    id="expense-amount"
+                    placeholder="0"
+                    step="10"
+                >
+            </div>
+
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <!-- Expense List Section -->
+        <div id="expense-list-container">
+            <h2>All Expenses</h2>
+
+            <!-- Empty State Message -->
+            <p id="empty-message">No expenses added yet.</p>
+
+            <!-- Dynamic Expense List -->
+            <div id="expense-list"></div>
+
+            <!-- Total Amount -->
+            <div id="total-container">
+                <h3>Total: <span id="total-amount-formatted">₹0.00</span></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 380px;
+}
+
+#monthly-summary {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+#monthly-summary h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #495057;
+}
+
+#monthly-summary p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+#error-message {
+    color: #d9534f;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: none;
+    /* Hidden by default */
+    background: #f8d7da;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+#empty-message {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    /* Ensures padding doesn't affect width */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#expense-list-container {
+    margin-top: 30px;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.expense-name {
+    font-weight: 500;
+}
+
+.expense-amount {
+    color: #d9534f;
+    margin-right: 10px;
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 2px 8px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.delete-btn:hover {
+    background-color: #ff1a1a;
+}
+
+#total-container {
+    margin-top: 20px;
+    border-top: 2px solid #333;
+    padding-top: 10px;
+    text-align: right;
+}
+
+#total-amount {
+    color: #28a745;
+}
